@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+p{
+    color: blue;
+}
+form{
+    height: 400px;
+    width: 300px;
+    background-color: antiquewhite;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 60px;
+}
+form input{
+    font-size: 20px;
+    border-radius: 50px;
+}

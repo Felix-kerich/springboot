@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>mika</title>
+    <link rel="stylesheet" th:href="@{/css/stlye.css}"/>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
+<form action="#" th:action="@{/home/create-user}" th:object="${user}" method="post">
+    <h1>Form</h1>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Email: <input type="text" th:field="*{email}" /></p>
+    <p>Password: <input type="text" th:field="*{password}" /></p>
+    <p><input type="submit" value="Submit" /> <br>
+        <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
